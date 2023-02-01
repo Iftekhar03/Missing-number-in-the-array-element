@@ -1,0 +1,29 @@
+//there is just function code
+
+class Solution{ 
+
+  public: 
+
+    int MissingNumber(vector<int>& array, int n) { 
+
+        // Your code goes here 
+
+        int i; 
+
+        int sum=0; 
+
+        for(i=0;i<array.size();i++) 
+
+        { 
+
+            sum+=array[i]; 
+
+        } 
+
+        int total=(n*(n+1))/2; 
+
+        return total-sum; 
+
+    } 
+
+}; 
